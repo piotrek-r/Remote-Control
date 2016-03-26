@@ -1,0 +1,13 @@
+http://www.w3schools.com/js/:
+  ./var/my-file.js:
+    reload
+http://www.w3schools.com/css/:
+  ./var/my-file.css:
+    reloadCss
+http://getbootstrap.com/javascript/:
+  ./var/test.txt:
+    |
+      document.querySelector('#myModal button.close').click();
+      setTimeout(function() {
+        document.querySelector('button[data-target$=myModal]').click();
+      }, 1000);

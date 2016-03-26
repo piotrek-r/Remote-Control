@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Remote Control",
+  "version": "1.0.0",
+  "short_name": "Remote Control",
+  "description": "Remote Control chrome client",
+  "author": "Piotr Rybałtowski <piotrek@owl-labs.com>",
+  "icons": {
+    "128": "128-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
