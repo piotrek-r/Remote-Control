@@ -1,7 +1,9 @@
-{
+const packageInfo = require('../package.json');
+
+module.exports = {
   "manifest_version": 2,
   "name": "Remote Control",
-  "version": "1.1.0",
+  "version": packageInfo.version,
   "short_name": "Remote Control",
   "description": "Remote Control chrome client",
   "author": "Piotr Rybałtowski <piotrek@owl-labs.com>",
@@ -18,4 +20,4 @@
       ]
     }
   ]
-}
+};

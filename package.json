@@ -1,10 +1,11 @@
 {
   "name": "node-remote-control",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "remote-control.js",
   "scripts": {
-    "start": "node --harmony --harmony_sloppy_let --harmony_destructuring --harmony_default_parameters ./remote-control.js",
+    "start": "node --harmony --harmony_sloppy_let --harmony_destructuring --harmony_default_parameters remote-control.js",
+    "build": "node --harmony --harmony_sloppy_let --harmony_destructuring --harmony_default_parameters bin/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
     "bunyan": "^1.8.0",
     "glob": "^7.0.3",
     "is": "^3.1.0",
+    "jquery": "^2.2.2",
     "js-yaml": "^3.5.5",
     "websocket": "^1.0.22"
   }

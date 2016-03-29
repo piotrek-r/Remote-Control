@@ -40,6 +40,10 @@ function registerWatcher(uri, files, commands) {
     paths.forEach(path=> {
       fs.watchFile(path, ()=> triggerCommands(uri, commands));
     });
+
+    logger.info({
+      uri, files, found: paths.length
+    }, 'WATCHERS REGISTERED');
   });
 }
 
