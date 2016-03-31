@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Remote Control",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "short_name": "Remote Control",
   "description": "Remote Control chrome client",
   "author": "Piotr Rybałtowski <piotrek@owl-labs.com>",

@@ -30,7 +30,7 @@ function runCommand(commandLine) {
 
   if ('trigger' === command) {
     console.log('remote-control: trigger');
-    triggerCommand(commands);
+    triggerAction(commands[1], commands[2], commands[3]);
     return;
   }
 
@@ -59,11 +59,9 @@ function reloadCss() {
   });
 }
 
-function triggerCommand(commands) {
-  var timeout = commands[1];
-  var action = commands[2];
-  var selector = commands[3];
+function triggerAction(timeout, action, selector) {
   setTimeout(function () {
-    $(selector).trigger(action);
+    console.log('remote-control: triggering after timeout', timeout, action, selector);
+    document.querySelector(selector)[action]();
   }, timeout);
 }

@@ -53,7 +53,6 @@ function triggerCommands(uri, commands) {
   // todo lock/unlock
 
   connections.forEach(description=> {
-    console.log(re, description.uri, re.test(description.uri));
     if (!re.test(description.uri)) {
       return;
     }
